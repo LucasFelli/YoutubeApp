@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.lucas.youtubeapp.MainActivity">
+
+<EditText
+    android:id="@+id/query"
+    android:layout_width="232dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignTop="@+id/button"
+    android:layout_marginStart="13dp"
+    android:ems="10"
+    android:hint="Search for"
+    android:inputType="text"
+    app:layout_constraintEnd_toStartOf="@+id/button"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="13dp" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="104dp"
+    android:layout_height="45dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="13dp"
+    android:layout_marginTop="14dp"
+    android:layout_toEndOf="@+id/query"
+    android:text="search"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginLeft="13dp"
+    android:layout_toRightOf="@+id/query" />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/main_reclycer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/query"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
