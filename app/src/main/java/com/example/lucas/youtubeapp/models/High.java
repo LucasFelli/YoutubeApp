@@ -1,10 +1,10 @@
 
-package com.example.lucas.youtubeapp;
+package com.example.lucas.youtubeapp.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Medium {
+public class High {
 
     @SerializedName("url")
     @Expose

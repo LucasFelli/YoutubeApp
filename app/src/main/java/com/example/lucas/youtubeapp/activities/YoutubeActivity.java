@@ -1,9 +1,11 @@
-package com.example.lucas.youtubeapp;
+package com.example.lucas.youtubeapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.lucas.youtubeapp.R;
+import com.example.lucas.youtubeapp.YoutubeAPI;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -11,7 +13,6 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 /**
  * Created by lucas on 22/03/2018.
- * http://androidsrc.net/youtube-android-player-api-v1-2-1-embed-video-in-your-android-application/
  */
 
 public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener{
